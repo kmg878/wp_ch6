@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+ var s = "Hello, I am String";
+ for(var i = 0 ;i<s.length;i++){
+	 console.log( s[i] );
+ }
+ 
+ //+ 연산
+ 
+ var s = "number";
+ var v ="1";
+ var v1=10;
+ 
+ console.log(s+v);
+ console.log(s+v1);
+ console.log(v1+s);
+ 
+ var v2="5";
+ var v3=5;
+ console.log(v2+v3);
+ console.log(v3+v2);
+ console.log(v2==v3);
+ 
+ var s1="hello";
+ var s2="hello";
+ console.log(s1==s2);
+ console.log(s1===s2);
+ 
+ //indexOf
+ var str = "String1 String2 String3";
+ console.log(str.indexOf("Str"));
+ 
+ //substr  8번째부터 불러온다
+ var str1=str.substr(8);
+ console.log(str1);
+ 
+ var str2=str.substr(8,10);
+ console.log(str2);
+ 
+ //encoding escape, encodeURI,encodeURIComponent
+ //a-z,A-Z
+ var str = "http://mysite.com/?stuff=\"안 대혁!&bar=";
+console.log(escape(str));
+console.log(encodeURI(str));
+console.log(encodeURIComponent(str));
+ </script>
+</head>
+<body>
+
+</body>
+</html>

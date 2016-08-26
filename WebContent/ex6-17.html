@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var onH1Clicked = function(el){
+	console.log('clicked:'+el);
+	console.log(el.ineerHTML);
+	//HTML & CSS 조작
+	el.innerHTML = "Clicked!";
+	el.style.backgroundColor = "#f00";
+	el.style.Color="#fff";
+}
+</script>
+</head>
+<body>
+
+<h1 onclick="onH1Clicked(this);">Click on this text!</h1>
+
+</body>
+</html>

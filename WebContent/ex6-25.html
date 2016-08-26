@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*	{margin:0;padding:0}
+body	{font-family:"맑은고딕",돋움,굴림;
+		font-size: 0.75em;
+   		color: #333;
+}
+#my-div{
+	background-color:#D94A38;width:90px;height:20px;padding:40px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var divElement = document.getElementById( "my-div");
+	divElement.onmousedown = function(){
+		console.log( "mousedown" );
+		this.style.backgroundColor = "#00f";
+		this.innerText = "mousedown";
+		this.style.color = "#fff";
+	}
+	divElement.onmouseup = function(){
+		console.log( "mouseup" );
+		this.style.backgroundColor = "#D94A38";
+		this.style.color = "#333";
+		this.innerText = "클릭하세요";
+	}
+	divElement.onclick = function(){
+		console.log( "click" );
+	}
+	divElement.ondblclick = function(){
+		console.log( "dblclick" );
+	}
+	
+}
+</script>
+
+</head>
+<body>
+<div id="my-div" >
+	클릭하세요!
+</div>
+</body>
+</html>

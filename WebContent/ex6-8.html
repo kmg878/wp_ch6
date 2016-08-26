@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var colors=[ "red","yellow","black","green"];
+var fruits=[ "apple","banana","orange","mango"];
+
+//concat 두개 붙임
+var a = colors.concat( fruits);
+console.log(colors);
+console.log( a );
+
+//join
+var s = colors.join(":");
+console.log(s);
+
+//push&pop
+var fruits2=[];
+fruits2.push("apple");
+console.log(fruits);
+fruits2.push("orange");
+fruits2.push("banana");
+console.log(fruits2);
+
+var s = fruits.pop();
+console.log( s );
+console.log( fruits2 );
+console.log( fruits2.pop() );
+console.log( fruits2.pop() );
+console.log( fruits2 );
+
+//reverse 역방향
+console.log(colors);
+colors.reverse();
+console.log(colors);
+
+//shift
+colors.shift();
+console.log(colors);
+
+//slice
+console.log( fruits);
+var a = fruits.slice(1,3);
+console.log(a);
+
+//sort 정렬
+console.log( fruits);
+fruits.sort();
+console.log( fruits);
+
+//insert
+fruits[1]="grape";
+console.log(fruits);
+
+// Array 객체 확장(insert 함수) 확장 추가
+
+Array.prototype.insert=function(index,val){
+	/*과제*/
+	fruits[index]=val;
+}
+//예
+fruits.insert(2,"grape");
+
+//연관 배열(Associated Array)
+var employee = {
+		name: "안대혁",
+		title: "강사"
+}
+console.log(employee.name+":"+employee.title);
+console.log(employee["name"]+":"+employee["title"]);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

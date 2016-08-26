@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var d1 = new Date();  //2013 년 7월 23일  
+console.log(d1);
+var d2= new Date(2012,8,18); //월은 0-11까지
+console.log(d2);
+
+var d3 = new Date(300000000*1000);// milliseconds
+console.log(d3);
+
+var days = ["일","월","화","수","목","금","토"]
+console.log(d1.getYear()+1900+"년"); //+1900
+console.log(d1.getMonth()+1+"월"); //0-11
+console.log(d1.getDate()+"일"); //
+console.log(days[d1.getDay()]); // 0 ->일요일, 6->토요일
+console.log(d1.getHours()); //
+console.log(d1.getMinutes());
+console.log(d1.getSeconds());
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
